@@ -57,7 +57,7 @@ Let's get started by installing Vagrant and Virtual Box:
 - [Install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 All set? Good! Now let's start up the virtual machine and provision it with
-git and node:
+node:
 
     $ cd vagrant-example/
     $ vagrant up
