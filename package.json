@@ -1,0 +1,24 @@
+{
+  "name": "vagrant-example",
+  "description": "Vagrant example running an Ubuntu node server.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mwbrooks/vagrant-example",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mwbrooks/vagrant-example.git"
+  },
+  "private": "true",
+  "scripts": {
+    "start": "node ./lib/index.js"
+  },
+  "dependencies": {
+    "connect": "2.19.5"
+  },
+  "contributors": [
+    {
+      "name": "Michael Brooks",
+      "email": "michael@michaelbrooks.ca",
+      "url": "http://michaelbrooks.ca/"
+    }
+  ]
+}
