@@ -12,8 +12,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "hashicorp/precise32"
 
-  # Provision for cordova-docs generator
+  # Provision for vagrant-example
   config.vm.provision :shell, path: "vagrant/provision.sh"
+  config.vm.provision :shell, path: "vagrant/user-provision.sh", privileged: false
+
+  # Network for vagrant-example
+  config.vm.network :forwarded_port, host: 3000, guest: 3000
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
