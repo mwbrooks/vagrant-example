@@ -9,7 +9,7 @@
   },
   "private": "true",
   "scripts": {
-    "start": "node ./lib/index.js"
+    "start": "node lib/index.js"
   },
   "dependencies": {
     "connect": "2.19.5"
